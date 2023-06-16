@@ -1,0 +1,38 @@
+{
+  "name": "battleship",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "./node_modules/.bin/babel src --out-dir dist",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "server": "webpack serve --open",
+    "git-page": "git subtree push --prefix dist origin gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SnackSquid/battleship.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SnackSquid/battleship/issues"
+  },
+  "homepage": "https://github.com/SnackSquid/battleship#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "babel-jest": "^29.5.0",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.1",
+    "jest": "^29.5.0",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.87.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
